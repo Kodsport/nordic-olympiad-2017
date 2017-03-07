@@ -1,0 +1,5 @@
+#!/bin/bash
+
+./gen avian en
+./gen subway en
+./gen yule en
