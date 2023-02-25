@@ -28,7 +28,7 @@ vi primes = prime_sieve(32000000);
 
 ll bt(int at, ll n) {
     ll sm = n;
-    rep(nxt, at, size(primes)) {
+    rep(nxt, at, primes.size()) {
         ll n2 = n / primes[nxt] / primes[nxt];
         if (n2 == 0) break;
         sm -= bt(nxt+1, n2);
