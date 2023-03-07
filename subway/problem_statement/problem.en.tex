@@ -16,9 +16,9 @@ Your task is to find a way of constructing the new subway network, such that the
 Your plan must use as \textbf{few weekends as possible}.
 
 \section*{Input}
-The first line contains the integer $1 \le N$.
+The first line contains the integer $N$ ($1 \leq N \leq 10^5$).
 The next $N - 1$ lines contains the tracks in the current subway system.
-Each track is described by two space-separated integers $a$ $b$ between $0$ and $N - 1$, the zero-indexed numbers of the stations the track connects.
+Each track is described by two space-separated integers $a$, $b$ between ($0 \leq a, b \leq N-1)$, the zero-indexed numbers of the stations the track connects.
 It will be possible to travel between any pair of stations using a sequence of the tracks.
 
 The next $N - 1$ lines contains the tracks that should be part of the new subway system, in the same format.
@@ -26,7 +26,7 @@ The next $N - 1$ lines contains the tracks that should be part of the new subway
 \section*{Output}
 First, output the number of weekends $K$ your construction plan needs.
 Then, output $K$ lines, one for each weekend in chronological order.
-A line should contain four integers $a_1, b_1, a_2, b_2$, meaning that the track connecting $a_1$ and $b_1$ should be closed, and a track connecting $a_2$ and $b_2$ should be built.
+Each line should contain four integers $a_1, b_1, a_2, b_2$, meaning that the track connecting $a_1$ and $b_1$ should be closed, and a track connecting $a_2$ and $b_2$ should be built.
 
 \section*{Grading}
 Your solution will be graded on a set of subtasks.
@@ -37,7 +37,7 @@ To get the points for a subtask, your solution must pass all test cases that are
 \begin{tabular}{| l | l | l |}
 \hline
 Subtask & Score & Constraints \\ \hline
-1       & 33    & $N \le 10$ \\ \hline
-2       & 33    & $N \le 1000$ \\ \hline
-3       & 34    & $N \le 100\,000$ \\ \hline
+1       & 33    & $N \leq 10$ \\ \hline
+2       & 33    & $N \leq 1000$ \\ \hline
+3       & 34    & No further constraints \\ \hline
 \end{tabular}
